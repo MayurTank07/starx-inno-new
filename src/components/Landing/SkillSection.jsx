@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import framer-motion
-import R1 from "../../assets/images/landing/R1.png";
-import R2 from "../../assets/images/landing/R2.png";
-import R3 from "../../assets/images/landing/R3.png";
+import R1 from "../../assets/images/Landing/R1.png";
+import R2 from "../../assets/images/Landing/R2.png";
+import R3 from "../../assets/images/Landing/R3.png";
 
 const skillsData = [
   {

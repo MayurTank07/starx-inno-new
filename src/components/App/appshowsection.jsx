@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import M1 from "../../assets/images/app/M1.png";
-import M2 from "../../assets/images/app/M2.png";
-import M3 from "../../assets/images/app/M3.png";
-import M4 from "../../assets/images/app/M4.png";
-import M5 from "../../assets/images/app/M5.png";
+import M1 from "../../assets/images/App/M1.png";
+import M2 from "../../assets/images/App/M2.png";
+import M3 from "../../assets/images/App/M3.png";
+import M4 from "../../assets/images/App/M4.png";
+import M5 from "../../assets/images/App/M5.png";
 
 export default function AppShowcaseSection() {
 

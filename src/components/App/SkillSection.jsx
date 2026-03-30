@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion"; // Make sure to install: npm install framer-motion
-import app1 from "../../assets/images/app/app1.png";
-import app2 from "../../assets/images/app/app1.png";
-import app3 from "../../assets/images/app/app1.png";
+import app1 from "../../assets/images/App/app1.png";
+import app2 from "../../assets/images/App/app1.png";
+import app3 from "../../assets/images/App/app1.png";
 
 const skills = [
   {

@@ -1,9 +1,9 @@
 import React from "react";
 
-import img1 from "../../assets/images/about/img1.png"; // illustration
-import img2 from "../../assets/images/about/img2.png"; // laptop
-import img3 from "../../assets/images/about/img3.png"; // meeting room
-import img4 from "../../assets/images/about/img4.png"; // office logo
+import img1 from "../../assets/images/About/img1.png"; // illustration
+import img2 from "../../assets/images/About/img2.png"; // laptop
+import img3 from "../../assets/images/About/img3.png"; // meeting room
+import img4 from "../../assets/images/About/img4.png"; // office logo
 
 export default function WhyChoose() {
   return (
