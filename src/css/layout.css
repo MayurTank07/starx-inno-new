@@ -1,0 +1,151 @@
+/* Main Container */
+.landing-container {
+  position: relative;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .landing-container {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-container {
+    padding: 0 80px;
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #ff8c00;
+}
+
+.nav-links .active {
+  color: #ff8c00;
+}
+
+/* Grid Layout */
+.landing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  gap: 32px;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .landing-grid {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    gap: 16px;
+  }
+}
+
+/* ========================================= */
+/* 🔥 ORANGE WIREFRAME ELLIPSE EFFECT */
+/* ========================================= */
+
+.ellipse {
+  position: absolute;
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Bottom Left */
+.ellipse-bottom-left {
+  bottom: -350px;
+  left: -350px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 140, 0, 0.5) 0%,
+    rgba(255, 140, 0, 0.2) 35%,
+    rgba(255, 140, 0, 0.08) 60%,
+    transparent 75%
+  );
+}
+
+/* Top Right */
+.ellipse-top-right {
+  top: -350px;
+  right: -350px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 140, 0, 0.5) 0%,
+    rgba(255, 140, 0, 0.2) 35%,
+    rgba(255, 140, 0, 0.08) 60%,
+    transparent 75%
+  );
+}
+
+/* Wire Lines - REMOVED for clean minimal look */
+
+/* Glow Effect */
+.ellipse::after {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 140, 0, 0.3),
+    transparent 70%
+  );
+  filter: blur(60px);
+  z-index: -1;
+}
+
+/* Optional subtle animation */
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ellipse {
+  animation: slowRotate 80s linear infinite;
+}
+
